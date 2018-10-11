@@ -1,0 +1,115 @@
+.jumbotron,
+.card-title,
+.card-link, h2, URLHeaders, strong {
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+}
+
+a {
+  letter-spacing: 0.05px
+}
+
+.card-link:hover {
+  /* font-size: 18px; */
+  text-shadow: .3px .3px .8px #000000;
+}
+/* a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+} */
+
+.card-text, p, #URL_List p span,
+#URL_List p.ipLine {
+  font-family: 'Ovo', serif;
+  font-size: 17px;
+  margin:0px;
+}
+
+.jumbotron {
+  background-color:#d2f6f6 !important;
+  height: 265px;
+}
+
+body {
+  background-color: #fffdee;
+  padding-bottom: 150px;
+}
+
+
+.card-1 {
+  background-color: #ace3ea;
+
+ /* background: linear-gradient(180deg,#ace3ea,#f0f8ff); */
+}
+
+.card-2 {
+  background-color: #fd908e;
+}
+
+.card-3 {
+  background-color: #fbe56e;
+}
+
+.card-4 {
+  background-color: #b4dfab;
+}
+
+.card-5 {
+  background-color: #F8F8F8
+}
+
+.card-6 {
+  background-color: #F8F8F8
+}
+
+
+#info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#URL_List p span {
+  font-style: normal !important;
+  text-decoration: none;
+}
+
+.URLHeaders {
+  font-style: italic;
+  text-align: center;
+}
+
+.URLHeaders a:link {
+
+}
+
+.ipLine {
+  margin:20;
+}
+
+/* credit for horizontal divisor -> https://codepen.io/ibrahimjabbari/pen/ozinB */
+/* hr.divisor {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+} */
+
+/* #URL_List {
+  text-decoration: underline;
+  font-weight: bold;
+} */
+/*
+font-family: 'Ovo', serif;
+font-family: 'Muli', sans-serif;
+
+lightblue = #d2f6f6
+dark grayish nav = #665f59
+darker grayish nav = 5f5852
+light backgroung baige = #fffdee
+light green = #b4daab
+light red=#fd8380
+darker light blue = #84d0cc
+light yellow= #ffe66f
+*/

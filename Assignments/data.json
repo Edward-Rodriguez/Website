@@ -1,0 +1,14 @@
+{
+  "Assignments": [
+      {
+        "name": "Assignment 1",
+        "title" : "Design Course Dashboard",
+        "description": "Each student must design a home page in their Venus account, or another webaccessible server of their choosing, to serve as their course “dashboard”. This will be used by the instructor to access and evaluate the student’s programming assignments. Essentially, one should have a link to each class assignment, starting with our “Zybook”, and gradually addingother assignments as they are implemented. The site should consider the guidelines and best practices set forth in our lecture on “web design”, and in particular utilize “responsive web design” (RWD)."
+      },
+      {
+        "name" : "Assignment 2",
+        "title" : "URL Analyzer",
+        "description" : "The goal of this assignment is to obtain and analyze a set of URLs. Provide a File-Upload button so that the user/instructor can choose a file which will contain a list of URLs. Parse the URLs into their component parts and obtain the IP address. Use bar graphs or pie charts to present your analysis"
+      }
+    ]
+}
