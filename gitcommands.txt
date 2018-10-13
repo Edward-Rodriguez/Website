@@ -1,0 +1,46 @@
+// change username to "Billy bob"
+git config --global user.name  "Billy Bob"
+
+// change user email to "BillyBob@gmail.com"
+git config --global user.email  "BillyBob@gmail.com"
+
+git config --list       // list all settings
+git help                // help menu
+git init                // initialize repository
+git add filename.txt    // add filename.txt to staging area
+git add .               // add all files to staging area
+                        // idea: working copy > staging area > repository
+                        // adds the file from working copy to staging area
+
+git commit -m "hello"   // record changes to repo with message hello
+                        // snapshot of point in time
+                        // adds file from staging are to repository
+git log                 // view commit history
+git log --author="Bob"  // view commits by bob
+git status              // show working tree status
+git diff                // show differences b/w working copy & repository
+                        // aka show modifications you've made
+git diff --staged       // compare files in the staging area and repository
+git rm filename.text    // remove file from repository & working copy
+                        // Note: you have to commit any changes to repository
+                        // adding, deleting files you have to commit afterwards
+git mv boo.txt foo.txt  // rename "boo.txt" to "foo.txt"
+git mv boo.txt Notes/   // move file "boo.txt" to folder "Notes"
+git commit -am "hi"     // add directly from working copy to repository
+                        // skip staging area
+                        // CAREFUL: will commit all files changes to repo
+git checkout -- boo.txt // take boo.txt from repo and move to working copy
+                        // without deleting any points in time
+git add -u              // This tells git to automatically stage tracked files
+                        // including deleting the previously tracked files.
+git revert ID#          // revert to this point in time
+git revert -n ID#       // revert to this point in time but don't commit
+git reset --hard #ID    // go back to this point in time
+                        // CAREFUL: will delete all commits after this point
+
+*************----GITHUB----************
+git remote add githubRepo https://github.com/ed...
+                // set your (github repo url for this project to "githubRepo")
+                // so you dont't have to keep retyping entire url
+git push githubRepo -u master
+                // take all files in local repo and push it to github repo
