@@ -39,6 +39,7 @@ git reset --hard #ID    // go back to this point in time
                         // CAREFUL: will delete all commits after this point
 
 *************----GITHUB----************
+//download GitHub desktop
 git remote add githubRepo https://github.com/ed...
                 // set your (github repo url for this project to "githubRepo")
                 // so you dont't have to keep retyping entire url
