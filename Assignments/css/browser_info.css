@@ -54,37 +54,15 @@ body {
   background-color: #b4dfab;
 }
 
-.card-5 {
+.card-Assignments {
   background-color: #F8F8F8
 }
-
-.card-6 {
-  background-color: #F8F8F8
-}
-
 
 #info {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-#URL_List p span {
-  font-style: normal !important;
-  text-decoration: none;
-}
-
-.URLHeaders {
-  font-style: italic;
-  text-align: center;
-}
-
-.URLHeaders a:link {
-
-}
-
-.ipLine {
-  margin:20;
-}
 
 /* credit for horizontal divisor -> https://codepen.io/ibrahimjabbari/pen/ozinB */
 /* hr.divisor {
