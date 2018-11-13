@@ -88,13 +88,61 @@
 
     </div>
 
-
-  <div class="radioContainer">
-    <h5>IP Address Scheme</h5>
-    <form action="">
-      <input type="radio" name="addressScheme" value="ipv4">ipv4<br>
-      <input type="radio" name="addressScheme" value="ipv6">ipv6<br>
-    </form>
+  <div class = "IPManagerContainer">
+    <h3>IP Address Manager</h3>
+    <section>
+      <hr class="divisor"><br>
+      <h5>Number of Hosts:</h5>
+      <form action="">
+        <input type="text" name="numOfHosts">
+      </form>
+    </section>
+    <section>
+      <hr class="divisor"><br>
+      <h5>IP Address Scheme:</h5>
+      <form action="">
+        <input type="radio" name="addressScheme" value="ipv4">IPv4
+        <input type="radio" name="addressScheme" value="ipv6">IPv6<br>
+      </form>
+    </section>
+    <section>
+      <hr class="divisor"><br>
+      <h5>Classful Addressing:</h5>
+      <form action="">
+        <input type="radio" name="classfulAddressing" value="yes">Yes
+        <input type="radio" name="classfulAddressing" value="no">No<br>
+      </form>
+      <fieldset disabled>
+        <p id="classSelection">Class:
+          <select>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </p>
+      </fieldset>
+    </section>
+    <section>
+      <hr class="divisor"><br>
+      <h5>Subnet Mask:</h5>
+      <form action="">
+        <fieldset disabled>
+          <input type="text" name="subnetMask"><br>
+        </fieldset>
+      </form>
+      <p id="subnetMaskNote">(Note: Auto-determined by # of hosts)</p>
+    </section>
+    <section>
+      <hr class="divisor"><br>
+      <h5>Zero Compression:</h5>
+      <form action="">
+        <input type="radio" name="zeroCompression" value="yes">Yes
+        <input type="radio" name="zeroCompression" value="no">No<br>
+      </form>
+      <hr class="divisor"><br>
+    </section>
   </div>
 
 </div>

@@ -1,4 +1,5 @@
 .jumbotron,
+.IPManagerContainer h3 h5,
 .card-title,
 .card-link, h2, URLHeaders {
   font-family: 'Muli', sans-serif;
@@ -16,13 +17,8 @@ a.custom-card:hover {
 }
 
 .card-link:hover {
-  /* font-size: 18px; */
   text-shadow: .3px .3px .8px #000000;
 }
-/* a.custom-card,
-a.custom-card:hover {
-  color: inherit;
-} */
 
 .card-text, p, #URL_List p span,
 #URL_List p.ipLine {
@@ -41,11 +37,8 @@ body {
   padding-bottom: 150px;
 }
 
-
 .card-1 {
   background-color: #ace3ea;
-
- /* background: linear-gradient(180deg,#ace3ea,#f0f8ff); */
 }
 
 .card-2 {
@@ -64,13 +57,34 @@ body {
   background-color: #F8F8F8
 }
 
-/*
-lightblue = #d2f6f6
-dark grayish nav = #665f59
-darker grayish nav = 5f5852
-light backgroung baige = #fffdee
-light green = #b4daab
-light red=#fd8380
-darker light blue = #84d0cc
-light yellow= #ffe66f
-*/
+.divisor {
+  margin-bottom: -10px;
+}
+
+.IPManagerContainer h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.IPManagerContainer h5 {
+  display: inline-block;
+  width: 250px;
+}
+
+input[type="radio"] {
+  margin: 0 10px 0 10px;
+}
+
+form {
+  display: inline-block;
+}
+
+#classSelection {
+  margin-left: 264px;
+  margin-top: 5px;
+}
+
+#subnetMaskNote {
+  margin-left: 250px;
+  font-size: 12px;
+}
