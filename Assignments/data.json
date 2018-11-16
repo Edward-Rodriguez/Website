@@ -9,6 +9,11 @@
         "name" : "Assignment 2",
         "title" : "URL Analyzer",
         "description" : "The goal of this assignment is to obtain and analyze a set of URLs. Provide a File-Upload button so that the user/instructor can choose a file which will contain a list of URLs. Parse the URLs into their component parts and obtain the IP address. Use bar graphs or pie charts to present your analysis"
+      },
+      {
+        "name" : "Assignment 3",
+        "title" : "IP Address Manager",
+        "description" : "The goal of this assignment is to provide an interface for assigning and managing IP addresses for the various models of IP addressing. There are several prices of information that will need to be entered by the user: IPv4/IPv6, classful or classless, choice of class A-E for classful addressing, choice of zero-compression for IPv6, # of hosts/addresses"
       }
     ]
 }
