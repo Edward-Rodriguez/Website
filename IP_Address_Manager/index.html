@@ -85,94 +85,67 @@
           <a href="index.html" class="card-link mt-auto">Go to Assignment 3</a>
         </div>
       </div>
-
     </div>
 
-  <div class = "IPManagerContainer">
-    <h3>IP Address Manager</h3>
-    <section>
-      <hr class="divisor"><br>
-      <h5>Number of Hosts:</h5>
-      <form action="">
-        <input type="text" name="numOfHosts">
+    <div class="IPManagerContainer">
+      <h3>IP Address Manager</h3>
+      <form id="form1">
+        <section>
+          <hr class="divisor"><br>
+          <h5>Number of Addresses:</h5>
+          <input type="number" name="numOfIPs" value="1" min="1" max="65534" class="box">
+        </section>
+        <section>
+          <hr class="divisor"><br>
+          <h5>IP Address Scheme:</h5>
+          <input type="radio" name="ipScheme" value="ipv4" onClick="typeChange(this)" required>IPv4
+          <input type="radio" name="ipScheme" value="ipv6" onClick="typeChange(this)">IPv6<br>
+        </section>
+        <section>
+          <hr class="divisor"><br>
+          <h5>Classful Addressing:</h5>
+          <fieldset id="classfulOption">
+            <input type="radio" name="classfulAddressing" value="Yes" onClick="classType(this)">Yes
+            <input type="radio" name="classfulAddressing" value="No" onClick="classType(this)">No<br>
+          </fieldset>
+          <p id="classSelection">Class:
+            <select id="classOption">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </p>
+        </section>
+        <section>
+          <hr class="divisor"><br>
+          <h5>Number of Hosts:</h5>
+          <input type="number" name="numOfHosts" value="1" min="1" max="65534" class="box" </section> <section>
+          <hr class="divisor"><br>
+          <h5>Zero Compression:</h5>
+          <fieldset id="zeroCompressionOption">
+            <input type="radio" name="zeroCompression" value="yes">Yes
+            <input type="radio" name="zeroCompression" value="no">No<br>
+          </fieldset>
+          <hr class="divisor"><br>
+        </section>
+        <div class="wrapper">
+          <button type="submit" form="form1" value="Submit">Submit</button>
+        </div>
       </form>
-    </section>
-    <section>
-      <hr class="divisor"><br>
-      <h5>IP Address Scheme:</h5>
-      <form action="">
-        <input type="radio" name="ipScheme" value="ipv4" onClick="typeChange(this)">IPv4
-        <input type="radio" name="ipScheme" value="ipv6" onClick="typeChange(this)">IPv6<br>
-      </form>
-    </section>
-    <section>
-      <hr class="divisor"><br>
-      <h5>Classful Addressing:</h5>
-      <form action="">
-
-          <input type="radio" name="classfulAddressing" value="yes">Yes
-          <input type="radio" name="classfulAddressing" value="no">No<br>
-
-      </form>
-
-        <p id="classSelection">Class:
-          <select id="classOption">
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-            <option value="E">E</option>
-          </select>
-        </p>
-
-
-    </section>
-    <section>
-      <hr class="divisor"><br>
-      <h5>Subnet Mask:</h5>
-      <form action="">
-        <fieldset disabled>
-          <input type="text" name="subnetMask"><br>
-        </fieldset>
-      </form>
-      <p id="subnetMaskNote">(Note: Auto-determined by # of hosts)</p>
-    </section>
-    <section>
-      <hr class="divisor"><br>
-      <h5>Zero Compression:</h5>
-      <form action="">
-        <fieldset id ="zeroCompressionOption">
-          <input type="radio" name="zeroCompression" value="yes">Yes
-          <input type="radio" name="zeroCompression" value="no">No<br>
-        </fieldset>
-      </form>
-      <hr class="divisor"><br>
-    </section>
-
-    <div class="generatedIPAddressesContainer">
       <h3>Generated Addresses</h3>
-      <table>
+      <table id="outputTable" style="table-layout: fixed; width: 100%">
         <tr>
-          <th>IPv4 / IPv6</th>
-          <th>Binary</th>
-        </tr>
-        <tr>
-          <td>172.16.254.1</td>
-          <td>10101100.00010000.11111110.00000001</td>
-        </tr>
-        <tr>
-          <td>2001:4860:4860::8888</td>
-          <td>0010000000000001 0100100001100000 0100100001100000 0000000000000000
-            0000000000000000 0000000000000000 0000000000000000 1000100010001000 </td>
+          <th>Dot-Decimal / Hex Notation</th>
+          <th>Binary Form</th>
         </tr>
       </table>
     </div>
   </div>
-
-</div>
-<!-- my JS file  -->
-<script src="js/ipAddressManager.js"></script>
-
+  <!-- my JS file  -->
+  <script src="js/wan-spinner.js"></script>
+  <script src="js/ipAddressManager.js"></script>
 
 </body>
 

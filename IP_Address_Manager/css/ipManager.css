@@ -59,20 +59,35 @@ body {
 
 .divisor {
   margin-bottom: -10px;
+  width:100%;
 }
 
 .IPManagerContainer h3 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+.IPManagerContainer {
+  margin:0 auto;
+  width:600px;
 }
 
 .IPManagerContainer h5 {
   display: inline-block;
-  width: 250px;
+  width: 275px;
+}
+
+fieldset {
+  display: inline-block;
 }
 
 input[type="radio"] {
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 20px;
+}
+
+.box {
+  margin: 20px;
 }
 
 form {
@@ -80,7 +95,7 @@ form {
 }
 
 #classSelection {
-  margin-left: 264px;
+  margin-left: 300px;
   margin-top: 5px;
 }
 
@@ -89,22 +104,59 @@ form {
   font-size: 12px;
 }
 
+.classDiv{
+  margin-left: 250px;
+}
+
 .generatedIPAddressesContainer {
 }
 
 table {
-    font-family: arial, sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
     border-collapse: collapse;
-    width: 60%;
+    width: 500px;
     margin: auto;
+}
+
+form {
+  width: 600px;
+}
+
+table td {
+    font-family:courier, courier new, serif;
+    font-weight: 700;
 }
 
 td, th {
     border: 1px solid #dddddd;
     text-align: center;
     width: 200px;
+    word-wrap: break-word;
 }
 
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+ input[type="radio"]:checked:before {
+        background: #008ECC;
+
+}
+
+.wrapper {
+    text-align: right;
+}
+
+/* button {
+    /* background-color: #7BCC70; /* Green */ /*
+    border: none;
+    font-weight: bold;
+    color: black;
+    padding: 9px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 18px;
+} */
